@@ -1,208 +1,78 @@
-{
-    "Note": "Mostly copy pasted from Postman, added more details when possible. ",
-    "Request": [
-        {
-            "previewInfoTooltip": {
-                "header": "We recommend using this header",
-                "body": "Postman added \"Cache-Control: no-cache\" as a precautionary measure to prevent the server from returning stale response when one makes repeated requests.\n\nYou can remove this header in the app settings or enter a new one with a different value."
-            },
-            "disableEdit": true,
-            "sortOrder": 3,
-            "overridden": false,
-            "key": "Cache-Control",
-            "system": true,
-            "value": "no-cache",
-            "enabled": true,
-            "enableSettingToTurnOffPreviewEntity": false,
-            "previewEntityWithHelper": "Go to settings"
-        },
-        {
-            "previewInfoTooltip": {
-                "header": "We recommend using this header",
-                "body": "The Postman-Token header appends a random UUID to every outgoing request. Postman adds this header for API developers to better debug requests sent and to ensure separate requests appear distinct to the receiving server.\n\nYou can remove this header in the app settings."
-            },
-            "disableEdit": true,
-            "sortOrder": 4,
-            "overridden": false,
-            "key": "Postman-Token",
-            "system": true,
-            "value": "<calculated when request is sent>",
-            "enabled": true,
-            "enableSettingToTurnOffPreviewEntity": false,
-            "previewEntityWithHelper": "Go to settings"
-        },
-        {
-            "previewInfoTooltip": {
-                "header": "We recommend using this header",
-                "body": "The Host header is added to identify the domain name for which a request is being sent to the server. This header is implicitly sent by every HTTP client.\n\nYou can remove the header or enter a new one with a different value. It is most likely that without this header, your request will return an HTTP 400 error."
-            },
-            "disableEdit": true,
-            "sortOrder": 7,
-            "overridden": false,
-            "key": "Host",
-            "system": true,
-            "value": "<calculated when request is sent>",
-            "enabled": true,
-            "enableSettingToTurnOffPreviewEntity": true,
-            "previewEntityWithHelper": null
-        },
-        {
-            "previewInfoTooltip": {
-                "header": "We recommend using this header",
-                "body": "The User-Agent header is added to help the server identify Postman as the HTTP requesting application or client.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value."
-            },
-            "disableEdit": true,
-            "sortOrder": 8,
-            "overridden": false,
-            "key": "User-Agent",
-            "system": true,
-            "value": "PostmanRuntime/7.26.8",
-            "enabled": true,
-            "enableSettingToTurnOffPreviewEntity": true,
-            "previewEntityWithHelper": null
-        },
-        {
-            "previewInfoTooltip": {
-                "header": "We recommend using this header",
-                "body": "The \"Accept: */*\" header is added to tell the server that Postman can understand and process all forms of response content types.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value."
-            },
-            "disableEdit": true,
-            "sortOrder": 9,
-            "overridden": false,
-            "key": "Accept",
-            "system": true,
-            "value": "*/*",
-            "enabled": true,
-            "enableSettingToTurnOffPreviewEntity": true,
-            "previewEntityWithHelper": null
-        },
-        {
-            "previewInfoTooltip": {
-                "header": "We recommend using this header",
-                "body": "The Accept-Encoding header is added to indicate to the server that Postman HTTP client supports a defined list of content-encoding or compression algorithms as response.\n\nYou can remove the header or enter a new one with a different value. Doing that may not accurately render the response within the app."
-            },
-            "disableEdit": true,
-            "sortOrder": 10,
-            "overridden": false,
-            "key": "Accept-Encoding",
-            "system": true,
-            "value": "gzip, deflate, br",
-            "enabled": true,
-            "enableSettingToTurnOffPreviewEntity": true,
-            "previewEntityWithHelper": null
-        },
-        {
-            "previewInfoTooltip": {
-                "header": "We recommend using this header",
-                "body": "Postman added the Connection header to indicate the server to keep the underlying network connection open once the current response is received. This allows Postman to reuse the same connection for faster response times in subsequent requests to the same server.\n\nYou can remove this header or enter a new one with a different value, such as `Connection: Close` to control this behaviour."
-            },
-            "disableEdit": true,
-            "sortOrder": 11,
-            "overridden": false,
-            "key": "Connection",
-            "system": true,
-            "value": "keep-alive",
-            "enabled": true,
-            "enableSettingToTurnOffPreviewEntity": true,
-            "previewEntityWithHelper": null
-        }
-    ],
-    "Response": [
-        {
-            "key": "Content-Type",
-            "value": "application/json; charset=UTF-8",
-            "description": "Indicates the resource's media type.",
-            "enabled": true,
-            "disableEdit": true,
-            "info": "Indicates the resource's media type."
-        },
-        {
-            "key": "Vary",
-            "value": "Origin",
-            "description": "Determines how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one.",
-            "enabled": true,
-            "disableEdit": true,
-            "info": "Determines how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one."
-        },
-        {
-            "key": "Vary",
-            "value": "X-Origin",
-            "description": "Determines how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one.",
-            "enabled": true,
-            "disableEdit": true,
-            "info": "Determines how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one."
-        },
-        {
-            "key": "Vary",
-            "value": "Referer",
-            "description": "Determines how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one.",
-            "enabled": true,
-            "disableEdit": true,
-            "info": "Determines how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one."
-        },
-        {
-            "key": "Content-Encoding",
-            "value": "gzip",
-            "description": "An entity header indicating the encoding method applied to the entity body.",
-            "enabled": true,
-            "disableEdit": true,
-            "info": "An entity header indicating the encoding method applied to the entity body."
-        },
-        {
-            "key": "Date",
-            "value": "Wed, 27 Jan 2021 22:46:53 GMT",
-            "description": "A general header containing the date and time the message was sent.",
-            "enabled": true,
-            "disableEdit": true,
-            "info": "A general header containing the date and time the message was sent."
-        },
-        {
-            "key": "Server",
-            "value": "ESF",
-            "description": "Contains information about how the server handles requests.",
-            "enabled": true,
-            "disableEdit": true,
-            "info": "Contains information about how the server handles requests."
-        },
-        {
-            "key": "Cache-Control",
-            "value": "private",
-            "description": "A general header specifying rules for caching in both requests and responses. Rules for length of cache are measured in seconds.",
-            "enabled": true,
-            "disableEdit": true,
-            "info": "A general header specifying rules for caching in both requests and responses. Rules for length of cache are measured in seconds."
-        },
-        {
-            "key": "X-XSS-Protection",
-            "value": "0",
-            "description": "Stops pages from loading when they detect reflected cross-site scripting (XSS) attacks.",
-            "enabled": true,
-            "disableEdit": true,
-            "info": "Stops pages from loading when they detect reflected cross-site scripting (XSS) attacks."
-        },
-        {
-            "key": "X-Frame-Options",
-            "value": "SAMEORIGIN",
-            "description": "Used to avoid clickjacking attacks by making sure their content is not embedded into other sites.",
-            "enabled": true,
-            "disableEdit": true,
-            "info": "Used to avoid clickjacking attacks by making sure their content is not embedded into other sites."
-        },
-        {
-            "key": "X-Content-Type-Options",
-            "value": "nosniff",
-            "description": "Can be used to opt out of MIME type sniffing a response away from the declared content-type.",
-            "enabled": true,
-            "disableEdit": true,
-            "info": "Can be used to opt out of MIME type sniffing a response away from the declared content-type."
-        },
-        {
-            "key": "Alt-Svc",
-            "value": "h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
-            "description": "Custom header",
-            "enabled": true,
-            "disableEdit": true,
-            "info": "Custom header"
-        }
-    ]
-}
+
+    Note: Mostly copy pasted from Postman added more details when possible. 
+    Request: 
+            Cache-Control:
+            value: no-cache
+            description: Postman added \Cache-Control: no-cache\ as a precautionary measure to prevent the server from returning stale response when one makes repeated requests.\n\nYou can remove this header in the app settings or enter a new one with a different value.
+        
+            Postman-Token:
+            value: <calculated when request is sent>,
+            description: The Postman-Token header appends a random UUID to every outgoing request. Postman adds this header for API developers to better debug requests sent and to ensure separate requests appear distinct to the receiving server.\n\nYou can remove this header in the app settings.
+        
+            Host:
+            body: The Host header is added to identify the domain name for which a request is being sent to the server. This header is implicitly sent by every HTTP client.\n\nYou can remove the header or enter a new one with a different value. It is most likely that without this header your request will return an HTTP 400 error.
+        
+            User-Agent:
+            value: PostmanRuntime/7.26.8
+            body: The User-Agent header is added to help the server identify Postman as the HTTP requesting application or client.\n\nIt is recommended that this header be sent but you can remove the header or enter a new one with a different value.
+        
+            Accept:
+            value: */*
+            body: The \Accept: */*\ header is added to tell the server that Postman can understand and process all forms of response content types.\n\nIt is recommended that this header be sent but you can remove the header or enter a new one with a different value.
+        
+            Accept-Encoding:
+            value: gzip deflate br
+            body: The Accept-Encoding header is added to indicate to the server that Postman HTTP client supports a defined list of content-encoding or compression algorithms as response.\n\nYou can remove the header or enter a new one with a different value. Doing that may not accurately render the response within the app.
+        
+            Connection:
+            value: keep-alive
+            body: Postman added the Connection header to indicate the server to keep the underlying network connection open once the current response is received. This allows Postman to reuse the same connection for faster response times in subsequent requests to the same server.\n\nYou can remove this header or enter a new one with a different value such as `Connection: Close` to control this behaviour.
+    
+    Response: 
+            Content-Type:
+            value: application/json; charset=UTF-8
+            description: Indicates the resource's media type.
+        
+            Vary:
+            value: Origin
+            description: Determines how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one.
+        
+            Vary:
+            value: X-Origin
+            description: Determines how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one.
+        
+            Vary:
+            value: Referer
+            description: Determines how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one.
+        
+            Content-Encoding:
+            value: gzip
+            description: An entity header indicating the encoding method applied to the entity body.
+        
+            Date:
+            value: Wed 27 Jan 2021 22:46:53 GMT
+            description: A general header containing the date and time the message was sent.
+        
+            Server:
+            value: ESF
+            description: Contains information about how the server handles requests.
+        
+            Cache-Control:
+            value: private
+            description: A general header specifying rules for caching in both requests and responses. Rules for length of cache are measured in seconds.
+        
+            X-XSS-Protection
+            value: 0
+            description: Stops pages from loading when they detect reflected cross-site scripting (XSS) attacks.
+        
+            X-Frame-Options
+            value: SAMEORIGIN
+            description: Used to avoid clickjacking attacks by making sure their content is not embedded into other sites.
+        
+            X-Content-Type-Options
+            value: nosniff
+            description: Can be used to opt out of MIME type sniffing a response away from the declared content-type.
+        
+            Alt-Svc:
+            value: h3-29=\:443\; ma=2592000h3-T051=\:443\; ma=2592000h3-Q050=\:443\; ma=2592000h3-Q046=\:443\; ma=2592000h3-Q043=\:443\; ma=2592000quic=\:443\; ma=2592000; v=\4643\
+    
